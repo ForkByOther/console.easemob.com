@@ -1,0 +1,21 @@
+<%= render 'head' %>
+ <link href="/css/documentation.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/css/pygments.css" media="screen" rel="stylesheet" type="text/css">
+<body class="blog">
+  <%= render 'header' %>
+
+  <div id="wrapper">
+    <div class="content">
+      <%= yield %>
+    </div>
+
+    <div class="sidebar-shell">
+        <%= render 'headlines', :changes => api_changes %>
+
+        <div class="sidebar-module notice"><a class="rss-subscribe" href="/changes.atom">Subscribe to the RSS feed</a></div>
+    </div>
+  </div>
+
+  <%= render 'footer' %>
+</body>
+</html>
