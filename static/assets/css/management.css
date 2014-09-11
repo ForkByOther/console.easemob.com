@@ -113,3 +113,7 @@ th {
 #header .dropdown-menu.dropdown-closer.pull-right {
   right: 0;
 }
+
+#header .nav_ntes {
+  padding: 0;
+}
